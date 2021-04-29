@@ -56,8 +56,10 @@ public class TrabajoPractico1 {
         System.out.println(numeros.length + " son los numeros dentro del array");
         var mayor = numeros[0];
         var menor = numeros[0];
-
+        var suma = 0.0;
+        
         for (int i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
             if (numeros[i] > mayor) {
                 mayor = numeros[i];
             } else if (numeros[i] < menor) {
@@ -66,6 +68,9 @@ public class TrabajoPractico1 {
         }
         System.out.println("El mayor es: " + mayor);
         System.out.println("El menor es: " + menor);
+        
+        var promedio = suma / numeros.length;
+        System.out.println("El promedio de los numeros es: " + promedio);
 
         var aux = 0;
 
