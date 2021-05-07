@@ -16,6 +16,7 @@ public class TrabajoPractico1 {
             System.out.println(b * c);
         } else {
             System.out.println("A no es un numero positivo");
+            System.out.println(b + c);
         }
         System.out.println("");
 
